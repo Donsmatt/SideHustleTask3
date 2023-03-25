@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
     <script
       src="https://kit.fontawesome.com/d988e13c0c.js"
@@ -14,68 +14,74 @@
   </head>
   <body>
     <nav>
-      <div class="navLogo">
-        <h1>STUTERN</h1>
-      </div>
-      <div class="icons">
-        <i class="fa fa-bars"></i>
-      </div>
-      <div class="navItems">
-        <ul>
-          <li>Short Courses</li>
-          <li>
-            Courses
-            <i class="fa fa-chevron-down"></i>
-          </li>
-          <li>
-            For Employers
-            <i class="fa fa-chevron-down"></i>
-          </li>
-          <li>
-            For Talents
-            <i class="fa fa-chevron-down"></i>
-          </li>
-          <li>Research</li>
-          <li>Blog</li>
-        </ul>
-        <div class="btnContainer">
-          <button type="button">Take a course</button>
+      <div class="container">
+        <div class="navLogo">
+          <h1>STUTERN</h1>
+        </div>
+        <div class="navIcons">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div class="navItems">
+          <ul>
+            <li>Short Courses</li>
+            <li>
+              Courses
+              <i class="fa fa-chevron-down"></i>
+            </li>
+            <li>
+              For Employers
+              <i class="fa fa-chevron-down"></i>
+            </li>
+            <li>
+              For Talents
+              <i class="fa fa-chevron-down"></i>
+            </li>
+            <li>Research</li>
+            <li>Blog</li>
+          </ul>
+          <div>
+            <button type="button" class="btnPrimary">Take a course</button>
+          </div>
         </div>
       </div>
     </nav>
-    <section class="section sectionOne">
-      <div class="text">
-        <h2>Kickstart your career in tech today</h2>
-        <p>
-          Stutern is a skills development and job placement platform that trains
-          and connects young African talents with long-term employment.
-        </p>
-        <div>
-          <button type="button">Take a course</button>
+    <section id="sectionOne">
+      <div class="container">
+        <div class="text">
+          <h2>Kickstart your career in tech today</h2>
+          <p>
+            Stutern is a skills development and job placement platform that
+            trains and connects young African talents with long-term employment.
+          </p>
+          <div>
+            <button type="button" class="btnPrimary">Take a course</button>
+          </div>
         </div>
-      </div>
-      <div>
-        <img src="img/png1.png" alt="image" />
+        <div class="image">
+          <img src="img/png1.png" alt="image" />
+        </div>
       </div>
     </section>
-    <section class="section sectionTwo">
-      <div class="text">
-        <h2>
-          Be employable in 6 <span class="underline">years</span>
-          <span class="teal">months</span>
-        </h2>
-        <p>
-          Join the Stutern Graduate Accelerator an immersive program that gives
-          you the head start to get a job in tech. With the right mentors,
-          peer-to-peer critiques, and challenging projects, any skill can be
-          mastered.
-        </p>
-        <div>
-          <button type="button">Take a course</button>
+    <section id="sectionTwo">
+      <div class="container">
+        <div class="text">
+          <h2>
+            Be employable in 6 <span class="lineThrough">years</span>
+            <span class="teal">months</span>
+          </h2>
+          <p>
+            Join the Stutern Graduate Accelerator an immersive program that
+            gives you the head start to get a job in tech. With the right
+            mentors, peer-to-peer critiques, and challenging projects, any skill
+            can be mastered.
+          </p>
+          <div>
+            <button type="button" class="btnPrimary">Take a course</button>
+          </div>
         </div>
-      </div>
-      <div>
-        <img src="img/png2.png" alt="image" />
+        <div class="image">
+          <img src="img/png2.png" alt="image" />
+        </div>
       </div>
     </section>
     <form action="/">
@@ -115,19 +121,20 @@
           <textarea name="message" id="message" cols="30" rows="3"></textarea>
         </div>
         <div class="btnContainer">
-          <button type="submit">Submit</button>
+          <button type="submit" class="btnPrimary">Submit</button>
         </div>
       </div>
+      <div class="success"></div>
     </form>
-    <section class="sectionThree">
-      <div>
+    <section id="sectionThree">
+      <div class="sectionThreeContainer">
         <div class="h2Container">
           <h2>Ready to talk?</h2>
           <h2>We're here to help</h2>
         </div>
         <div class="btnContainer">
-          <button type="button" class="btn btnOne">I want to hire</button>
-          <button type="button" class="btn btnTwo">I want to be hired</button>
+          <button type="button" class="btnSecondary">I want to hire</button>
+          <button type="button" class="btnTertiary">I want to be hired</button>
         </div>
       </div>
     </section>

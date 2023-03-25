@@ -1,9 +1,20 @@
 "use strict";
 
-function myFunction() {
-  const x = 3.14;
+const form = document.querySelector("form");
+const message = document.querySelector(".success");
 
-  console.log(x);
-}
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-myFunction();
+  form.checkValidity();
+
+  // CREATE SUCCESS MESSAGE
+
+  message.textContent = "Your Profile was created successfully";
+});
+
+const icon = document.querySelector(".navIcons");
+
+icon.addEventListener("click", () => {
+  console.log("Hello");
+});
