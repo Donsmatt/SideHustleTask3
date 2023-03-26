@@ -90,6 +90,7 @@ nav {
   position: sticky;
   top: 0;
   background-color: #fff;
+  min-height: 50px;
 }
 
 nav .container {
