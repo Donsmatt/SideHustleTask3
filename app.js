@@ -13,8 +13,19 @@ form.addEventListener("submit", (e) => {
   message.textContent = "Your Profile was created successfully";
 });
 
-const icon = document.querySelector(".navIcons");
+const hamburger = document.querySelector(".hamburger");
+const navItems = document.querySelector(".navItems");
+const list = document.querySelectorAll("li");
 
-icon.addEventListener("click", () => {
+hamburger.addEventListener("click", () => {
   console.log("Hello");
+  hamburger.classList.toggle("active");
+  navItems.classList.toggle("active");
 });
+
+list.forEach((li) =>
+  li.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navItems.classList.remove("active");
+  })
+);

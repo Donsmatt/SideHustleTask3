@@ -28,10 +28,16 @@ img {
 ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+  margin-right: 3rem;
 }
 
 li {
+  text-decoration: none;
+}
+
+a {
+  color: #333;
   text-decoration: none;
 }
 
@@ -84,25 +90,36 @@ nav {
   position: sticky;
   top: 0;
   background-color: #fff;
+  min-height: 60px;
 }
 
 nav .container {
   justify-content: space-between;
 }
 
-nav .navLogo {
+nav .navLogo h1 {
   color: teal;
-}
-
-nav .navIcons {
-  display: none;
 }
 
 nav .navItems {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5rem;
+}
+
+nav .navItems a {
+  color: #333;
+}
+
+nav .navItems a:hover {
+  color: teal;
+}
+
+/* HAMBURGER STYLES */
+
+nav .hamburger {
+  display: none;
+  font-size: 1.5rem;
 }
 
 /* SECTION STYLES */
@@ -155,6 +172,7 @@ section#sectionThree .sectionThreeContainer {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  width: 90%;
 }
 
 section#sectionThree .h2Container {
@@ -214,28 +232,66 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1024px) {
+  ul {
+    gap: 1rem;
+    margin-right: 2rem;
+  }
+
   button,
   nav .navLogo {
     font-size: 0.9rem;
   }
 
-  nav .navItems {
+  nav .navItems ul {
     gap: 1rem;
   }
 }
 
-@media screen and (max-width: 985px) {
+@media screen and (max-width: 868px) {
+  ul {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
   button,
   nav .navLogo {
     font-size: 1rem;
   }
 
-  nav .navItems {
+  nav button {
     display: none;
   }
 
-  nav .navIcons {
+  nav .navItems {
+    position: fixed;
+    left: 0%;
+    top: -100%;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  nav .navItems.active {
+    top: 60px;
+  }
+
+  nav .hamburger {
+    display: block;
+  }
+
+  nav .hamburger .close {
+    display: none;
+  }
+
+  nav .hamburger.active .open {
+    display: none;
+  }
+
+  nav .hamburger.active .close {
     display: block;
   }
 
