@@ -18,7 +18,6 @@ const navItems = document.querySelector(".navItems");
 const list = document.querySelectorAll("li");
 
 hamburger.addEventListener("click", () => {
-  console.log("Hello");
   hamburger.classList.toggle("active");
   navItems.classList.toggle("active");
 });
