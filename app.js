@@ -10,7 +10,7 @@ form.addEventListener("submit", (e) => {
 
   // CREATE SUCCESS MESSAGE
 
-  message.textContent = "Your Profile was created successfully";
+  message.textContent = "Your Message was sent successfully";
 });
 
 const hamburger = document.querySelector(".hamburger");
