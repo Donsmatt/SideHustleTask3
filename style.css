@@ -90,7 +90,6 @@ nav {
   position: sticky;
   top: 0;
   background-color: #fff;
-  min-height: 50px;
 }
 
 nav .container {
@@ -276,7 +275,7 @@ footer {
   }
 
   nav .navItems.active {
-    top: 60px;
+    top: 50px;
   }
 
   nav .hamburger {
