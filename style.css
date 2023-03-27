@@ -309,14 +309,14 @@ footer {
     justify-content: center;
     text-align: center;
   }
-
-  section .image {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 580px) {
   section#sectionThree .btnContainer {
     flex-direction: column;
+  }
+
+  section .image {
+    display: none;
   }
 }
