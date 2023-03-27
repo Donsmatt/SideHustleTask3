@@ -246,15 +246,6 @@ footer {
   nav .navItems ul {
     gap: 1rem;
   }
-
-  section {
-    height: auto;
-  }
-
-  section .container {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 @media screen and (max-width: 868px) {
@@ -305,15 +296,24 @@ footer {
     display: block;
   }
 
+  section {
+    height: auto;
+  }
+
   section .container {
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 580px) {
   section#sectionThree .btnContainer {
     flex-direction: column;
+  }
+
+  section .container {
+    justify-content: center;
+    text-align: center;
   }
 
   section .image {
